@@ -17,23 +17,28 @@ body {
 }
 
 #main-nav ul {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 1em;
+  margin: 0;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
-  grid-auto-columns: -webkit-min-content;
-  grid-auto-columns: min-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-#main-nav ul:hover {
-  background: var(--blue);
+#main-nav ul:hover button {
+  color: var(--fire);
 }
 
 #main-nav ul li {
@@ -45,14 +50,16 @@ body {
 }
 
 #main-nav ul li button {
-  padding: .2em;
+  padding: .2em .2em;
   border-radius: 10px;
   -webkit-transition: all .5s;
   transition: all .5s;
-  color: var(--fire);
+  color: var(--dk-lav);
   text-decoration: none;
   background: none;
   border: none;
+  margin: 0 .2em;
+  cursor: pointer;
 }
 
 #main-nav ul li button:hover {

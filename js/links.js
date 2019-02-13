@@ -5,9 +5,9 @@ const links = [{
         "id": "link-instagram"
     },
     {
-        "name": "Facebook",
+        "name": "Podcast",
         "link": "#facebook",
-        "content": "fsadfdsfsadf#facebook",
+        "content": "yassss gawd, we are LIVE Ma'Lord. Podcasting and stuffz",
         "id": "link-facebook"
     },
     {
