@@ -37,10 +37,6 @@ body {
   transition: all .5s;
 }
 
-#main-nav ul:hover button {
-  color: var(--fire);
-}
-
 #main-nav ul li {
   list-style: none;
   display: block;
@@ -50,26 +46,38 @@ body {
 }
 
 #main-nav ul li button {
-  padding: .2em .2em;
-  border-radius: 10px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  padding: .1em 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   color: var(--dk-lav);
   text-decoration: none;
   background: none;
   border: none;
-  margin: 0 .2em;
+  margin: 0 .4em;
+  border-bottom: 3px solid var(--navy);
   cursor: pointer;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 #main-nav ul li button:hover {
   color: var(--green);
-  background: var(--dk-lav);
-  padding: .2em .5em;
+  color: var(--fire);
+  margin: auto 1em;
+  border-bottom: 3px solid var(--li-blue);
+  border-bottom: 3px solid var(--dk-lav);
 }
 
 #main-nav ul li button:focus {
   outline-style: none;
+  border-color: var(--navy);
+  color: var(--lav);
+  margin: 0 .4em;
+}
+
+#main-nav ul li button:active {
+  border-color: var(--fire);
 }
 
 #main, section {

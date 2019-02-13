@@ -35,9 +35,7 @@ body {
         transition: all .5s;
         &:hover {
         //    background: var(--blue);
-        button {
-            color: var(--fire);
-        }
+
         }
         li {
             // background: var(--purp);
@@ -49,33 +47,54 @@ body {
             // padding: .2em;
             // border-radius: 10px;
 
+
             &:hover {
                 // background: var(--dk-lav);
                 // padding: .2em .5em;
+                // order: 2;
             }
 
             button {
-                padding: .2em .2em;
-                border-radius: 10px;
-                transition: all .5s;
+                padding: .1em 0;
+                // border-radius: 10px;
+                transition: all .5s ease;
+                // transition: margin 1s ease;
                 color: var(--dk-lav);
                 text-decoration: none;
                 background: none;
                 border: none;
-                margin: 0 .2em;
+                margin: 0 .4em;
+                border-bottom: 3px solid var(--navy);
                 cursor: pointer;
+                order: 1;
+                
 
                 &:hover {
                     // background: var(--lav);
                     // padding-right: .5em;
                     color: var(--green);
-                    background: var(--dk-lav);
-                    padding: .2em .5em;
+                    color: var(--fire);
+
+                    // background: var(--dk-lav);
+                    margin: auto 1em;
+                    border-bottom: 3px solid var(--li-blue);
+                    border-bottom: 3px solid var(--dk-lav);
+
                 }
                 &:focus {
                     outline-style: none;
+                    border-color: var(--navy);
+                  color: var(--lav);
+                  margin: 0 .4em;
+                    // border-bottom: 3px solid var(--dk-lav);
                 }
-
+                &:active{
+                    border-color: var(--fire);
+                    // margin: 0 .2em;
+                }
+// &:focus {
+//     background: pink;
+// }
             }
         }
     }
