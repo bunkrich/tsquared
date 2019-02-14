@@ -130,21 +130,19 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
-  background: yellow;
 }
 
 #footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: footer;
-  background: navy;
 }
 
 #tbd {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: tbd;
-  background: var(--green);
+  background: var(--dk-lav);
 }
 
 #hero {

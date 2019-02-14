@@ -115,15 +115,15 @@ body {
 }
 #main {
 grid-area: main;
-background: yellow;
+// background: yellow;
 }
 #footer{
 grid-area: footer;
-background: navy;
+// background: navy;
 }
 #tbd {
     grid-area: tbd;
-    background: var(--green);
+    background: var(--dk-lav);
 }
 #hero {
     display: grid;
