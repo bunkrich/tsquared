@@ -16,71 +16,93 @@ body {
   color: var(--li-blue);
 }
 
+#main-nav {
+  font-size: 1.5em;
+  font-family: 'Staatliches', monospace;
+}
+
 #main-nav ul {
   margin: 0;
-  padding: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.5em;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-#main-nav ul li {
   list-style: none;
-  display: block;
-  font-family: 'Staatliches', cursive;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  padding: .5em;
 }
 
-#main-nav ul li button {
-  padding: .1em 0;
+@media screen and (min-width: 600px) {
+  #main-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#main-nav li {
+  padding: .5em 0;
+}
+
+#main-nav button {
+  line-height: 1ex;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   color: var(--dk-lav);
-  text-decoration: none;
   background: none;
   border: none;
+  border-left: 3px solid var(--li-blue);
   margin: 0 .4em;
-  border-bottom: 3px solid var(--navy);
   cursor: pointer;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-#main-nav ul li button:hover {
-  color: var(--green);
-  color: var(--fire);
-  margin: auto 1em;
-  border-bottom: 3px solid var(--li-blue);
-  border-bottom: 3px solid var(--dk-lav);
-}
-
-#main-nav ul li button:focus {
   outline-style: none;
-  border-color: var(--navy);
+  padding-left: .3em;
+}
+
+@media screen and (min-width: 600px) {
+  #main-nav button {
+    line-height: normal;
+    padding: .1em 0;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 3px solid var(--navy);
+  }
+}
+
+#main-nav button:hover {
+  color: var(--fire);
+  padding-left: .7em;
+  border-color: var(--dk-lav);
+}
+
+@media screen and (min-width: 600px) {
+  #main-nav button:hover {
+    padding-left: 0;
+    margin: 0 1em;
+  }
+}
+
+#main-nav button:focus {
   color: var(--lav);
   margin: 0 .4em;
+  border-color: var(--green);
 }
 
-#main-nav ul li button:active {
+@media screen and (min-width: 600px) {
+  #main-nav button:focus {
+    border-color: var(--navy);
+  }
+}
+
+#main-nav button:active {
   border-color: var(--fire);
 }
 
-#main, section {
+#main,
+section {
   margin: auto;
   padding: 1em;
 }
