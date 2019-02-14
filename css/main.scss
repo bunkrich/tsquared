@@ -127,53 +127,26 @@ background: navy;
 }
 #hero {
     display: grid;
-    // max-width: 80%;
-    // grid-template-columns: auto;
-    // grid-template-rows: auto;
-    // border: 1px red solid;
-    // margin: 2px;
-    // padding: 2px;
     padding: 0;
-    // background: yellow;
-    // max-height: 30vh;
     picture {
-        // height: 30vh;
         grid-row: 1;
         grid-column: 1;
     }
         img {
             display: block;
-            // max-height: 30vmax;
-            object-fit: contain;
 
+            object-fit: contain;
         width: 100%;
-        // height: 100%;
-        // min-width: 0;
-// min-heigt: 0;
-        // padding: 1em;
-        // background: lightpink;
         box-sizing: border-box;
-        // min-width: 0;
 
     }
-
 }
 #hero-portrait {
     align-self: end;
     justify-self: center;
-        // width: 80%;
-        // max-width: 40vmax;
-        // max-height: 50vh;
-        
-        // width: 80%;
         max-width: 60vmax;
         img {
-            // object-fit: contain;
             margin-top: 10vmin;
-            // margin-top: 1em;
-            // border: 1px solid blue;
-     
-
         }
     }
 
@@ -181,31 +154,21 @@ background: navy;
     grid-row: 1;
     grid-column: 1;
     min-height: 50vh;
-
-    // background: yellow;
-        // object-fit: cover;
-        background-image: url("/img/background.jpg");
+    background: white;
+        background-image: linear-gradient(350deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 90%),url("/img/background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-// min-height: 100%;
     }
 #hero-banner {
-// align-self: center;
 justify-self: center;
 img {
-    border: 2px solid yellow;
     max-width: 600px;
     
 }}
 
 #hero-logo {
-    // align-self: center;
     justify-self: center;
-    // padding-top: 10vmin;
     img {
-        border: 2px solid orange;
-        // max-height: fit-content;
         margin-top: 5vmin;
-        // max-width: 600px;
     }}
