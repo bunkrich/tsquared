@@ -41,7 +41,7 @@ body {
     }
 
     button {
-// line-height: 1ex;
+        // line-height: 1ex;
         transition: all .5s ease;
         color: var(--dk-lav);
         background: none;
@@ -51,6 +51,7 @@ body {
         cursor: pointer;
         outline-style: none;
         padding-left: .3em;
+
         @media screen and (min-width: 600px) {
             // line-height: normal;
             padding: .1em 0;
@@ -61,8 +62,9 @@ body {
 
         &:hover {
             color: var(--fire);
-           padding-left: .7em;
+            padding-left: .7em;
             border-color: var(--dk-lav);
+
             @media screen and (min-width: 600px) {
                 padding-left: 0;
                 margin: 0 1em;
@@ -73,6 +75,7 @@ body {
             color: var(--lav);
             margin: 0 .4em;
             border-color: var(--green);
+
             @media screen and (min-width: 600px) {
                 border-color: var(--navy);
             }
@@ -95,12 +98,13 @@ section {
 
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "tbd"
         "footer";
 }
+
 @media screen and (min-width: 600px) {
     body {
         background: black;
@@ -108,67 +112,80 @@ body {
         grid-template-areas: "header header header"
             "main main tbd"
             "footer footer footer";
-    } 
+    }
 }
+
 #header {
     grid-area: header;
 }
+
 #main {
-grid-area: main;
-// background: yellow;
+    grid-area: main;
+    // background: yellow;
 }
-#footer{
-grid-area: footer;
-// background: navy;
+
+#footer {
+    grid-area: footer;
+    // background: navy;
 }
+
 #tbd {
     grid-area: tbd;
     background: var(--dk-lav);
 }
+
 #hero {
     display: grid;
     padding: 0;
+
     picture {
         grid-row: 1;
         grid-column: 1;
     }
-        img {
-            display: block;
 
-            object-fit: contain;
+    img {
+        display: block;
+        object-fit: contain;
         width: 100%;
         box-sizing: border-box;
 
     }
 }
+
 #hero-portrait {
     align-self: end;
     justify-self: center;
-        max-width: 60vmax;
-        img {
-            margin-top: 10vmin;
-        }
+    max-width: 60vmax;
+
+    img {
+        margin-top: 10vmin;
     }
+}
 
 #hero-background {
     grid-row: 1;
     grid-column: 1;
     min-height: 50vh;
     background: white;
-        background-image: linear-gradient(350deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 90%),url("/img/background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+    background-image: linear-gradient(350deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 90%), url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #hero-banner {
-justify-self: center;
-img {
-    max-width: 600px;
-    
-}}
+    justify-self: center;
+
+    img {
+        max-width: 600px;
+
+    }
+}
 
 #hero-logo {
     justify-self: center;
+
     img {
         margin-top: 5vmin;
-    }}
+    }
+}
