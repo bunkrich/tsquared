@@ -92,3 +92,120 @@ section {
     margin: auto;
     padding: 1em;
 }
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "tbd"
+        "footer";
+}
+@media screen and (min-width: 600px) {
+    body {
+        background: black;
+        display: grid;
+        grid-template-areas: "header header header"
+            "main main tbd"
+            "footer footer footer";
+    } 
+}
+#header {
+    grid-area: header;
+}
+#main {
+grid-area: main;
+background: yellow;
+}
+#footer{
+grid-area: footer;
+background: navy;
+}
+#tbd {
+    grid-area: tbd;
+    background: var(--green);
+}
+#hero {
+    display: grid;
+    // max-width: 80%;
+    // grid-template-columns: auto;
+    // grid-template-rows: auto;
+    // border: 1px red solid;
+    // margin: 2px;
+    // padding: 2px;
+    padding: 0;
+    // background: yellow;
+    // max-height: 30vh;
+    picture {
+        // height: 30vh;
+        grid-row: 1;
+        grid-column: 1;
+    }
+        img {
+            display: block;
+            // max-height: 30vmax;
+            object-fit: contain;
+
+        width: 100%;
+        // height: 100%;
+        // min-width: 0;
+// min-heigt: 0;
+        // padding: 1em;
+        // background: lightpink;
+        box-sizing: border-box;
+        // min-width: 0;
+
+    }
+
+}
+#hero-portrait {
+    align-self: end;
+    justify-self: center;
+        // width: 80%;
+        // max-width: 40vmax;
+        // max-height: 50vh;
+        
+        // width: 80%;
+        max-width: 60vmax;
+        img {
+            // object-fit: contain;
+            margin-top: 10vmin;
+            // margin-top: 1em;
+            // border: 1px solid blue;
+     
+
+        }
+    }
+
+#hero-background {
+    grid-row: 1;
+    grid-column: 1;
+    min-height: 50vh;
+
+    // background: yellow;
+        // object-fit: cover;
+        background-image: url("/img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+// min-height: 100%;
+    }
+#hero-banner {
+// align-self: center;
+justify-self: center;
+img {
+    border: 2px solid yellow;
+    max-width: 600px;
+    
+}}
+
+#hero-logo {
+    // align-self: center;
+    justify-self: center;
+    // padding-top: 10vmin;
+    img {
+        border: 2px solid orange;
+        // max-height: fit-content;
+        margin-top: 5vmin;
+        // max-width: 600px;
+    }}
