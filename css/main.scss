@@ -41,7 +41,6 @@ body {
     }
 
     button {
-        // line-height: 1ex;
         transition: all .5s ease;
         color: var(--dk-lav);
         background: none;
@@ -88,7 +87,24 @@ body {
     }
 
 }
+#header {
+    grid-area: header;
+}
 
+#main {
+    grid-area: main;
+    // background: yellow;
+}
+
+#footer {
+    grid-area: footer;
+    // background: navy;
+}
+
+#tbd {
+    grid-area: tbd;
+    background: var(--dk-lav);
+}
 
 #main,
 section {
@@ -115,24 +131,7 @@ body {
     }
 }
 
-#header {
-    grid-area: header;
-}
 
-#main {
-    grid-area: main;
-    // background: yellow;
-}
-
-#footer {
-    grid-area: footer;
-    // background: navy;
-}
-
-#tbd {
-    grid-area: tbd;
-    background: var(--dk-lav);
-}
 
 #hero {
     display: grid;
