@@ -166,9 +166,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   object-fit: contain;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 #hero-portrait {
@@ -181,7 +178,7 @@ body {
 }
 
 #hero-portrait img {
-  margin-top: 10vmin;
+  margin-top: 20vh;
 }
 
 #hero-background {
@@ -189,8 +186,6 @@ body {
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
-  min-height: 50vh;
-  max-height: 50vh;
   background: white;
   background-image: linear-gradient(350deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, black 90%), url("https://bunkrich.github.io/tsquared/img/background.jpg");
   background-repeat: no-repeat;
@@ -204,7 +199,8 @@ body {
 }
 
 #hero-banner img {
-  max-width: 600px;
+  padding-top: 5vmax;
+  max-width: 80vmin;
 }
 
 #hero-logo {
@@ -213,6 +209,6 @@ body {
 }
 
 #hero-logo img {
-  margin-top: 5vmin;
+  margin-top: 10vmin;
 }
 /*# sourceMappingURL=main.css.map */
