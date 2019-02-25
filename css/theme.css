@@ -8,6 +8,9 @@
   --dk-lav: #715aff;
   --fire: #FB3640;
   --green: #1EFFBC;
+  --dk-green: #3ddc97;
+  --teal: #17bebb;
+  --dk-teal: #004e64;
 }
 
 body {
@@ -18,6 +21,14 @@ body {
 body div {
   padding: 1em;
   font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Staatliches', monospace;
+}
+
+h4 {
+  font-weight: 100;
 }
 
 #theme-1 {
@@ -32,7 +43,10 @@ body div {
   --pop1: var(--fire);
   --pop2: var(--pink);
   --pop3: var(--green);
-  --pop4: white;
+  --pop4: var(--dk-green);
+  --pop5: var(--teal);
+  --pop6: var(--dk-teal)
+;
 }
 
 #theme-2 {
@@ -48,6 +62,11 @@ body div {
   --pop2: #BB2A4C;
   --pop3: #D52E48;
   --pop4: #EA3A51;
+}
+
+div {
+  border-radius: 10px;
+  margin: 1em;
 }
 
 #light1 {
@@ -108,5 +127,55 @@ body div {
 #pop4 {
   background: var(--pop4);
   color: white;
+}
+
+#pop5 {
+  background: var(--pop5);
+  color: white;
+}
+
+#pop6 {
+  background: var(--pop6);
+  color: white;
+}
+
+#pop7 {
+  background: var(--pop7);
+  color: white;
+}
+
+.grad {
+  margin: 1em;
+  border-radius: 10px;
+}
+
+#grad1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--light4)), color-stop(var(--light1)), color-stop(var(--light2)), to(var(--light3)));
+  background-image: linear-gradient(to right, var(--light4), var(--light1), var(--light2), var(--light3));
+  color: var(--pop6);
+}
+
+#grad2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--dark1)), color-stop(var(--dark2)), color-stop(var(--dark3)), to(var(--dark4)));
+  background-image: linear-gradient(to right, var(--dark1), var(--dark2), var(--dark3), var(--dark4));
+  color: var(--light1);
+}
+
+#grad3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--light2)), color-stop(var(--pop1)), to(var(--pop2)));
+  background-image: linear-gradient(to right, var(--light2), var(--pop1), var(--pop2));
+  color: white;
+}
+
+#grad4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--pop3)), color-stop(var(--pop4)), color-stop(var(--pop5)), to(var(--pop6)));
+  background-image: linear-gradient(to right, var(--pop3), var(--pop4), var(--pop5), var(--pop6));
+  color: var(--dark3);
+}
+
+#grad5 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--pop4)), color-stop(var(--pop5)), color-stop(var(--pop6)), color-stop(var(--dark1)), to(var(--dark2)));
+  background-image: linear-gradient(to right, var(--pop4), var(--pop5), var(--pop6), var(--dark1), var(--dark2));
+  color: var(--dark3);
 }
 /*# sourceMappingURL=theme.css.map */
