@@ -4,7 +4,13 @@
     
     console.log('oopsie poopsie');
 
-
+window.addEventListener('scroll', () => {
+   let parent = document.getElementById('parallax-container');
+   let children = parent.getElementsByTagName('div');
+   for(let i = 0; i < children.length; i++) {
+     children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+   }
+}, false)
     // let list = [{
     //         "name": "Instagram",
     //         "link": "www.instagram.com",
@@ -79,3 +85,12 @@
     //     let bio = document.getElementById('bio')
     //     bio.innerHTML = "This is the BIO yo!"
     //   });
+
+
+    window.addEventListener('scroll', () => {
+        let parent = document.getElementById('parallax-container');
+        let children = parent.getElementsByTagName('div');
+        for(let i = 0; i < children.length; i++) {
+          children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+        }
+     }, false)
